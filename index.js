@@ -11,15 +11,15 @@ console.log("ucducgud");
 
 
  const PORT = process.env.PORT || 3000;
- //mysql://root:awuYBQRAVlCWEVqwepeJxSsQrxRzhrym@hopper.proxy.rlwy.net:32147/railway
+ 
 
 
 const my = mysql.createPool({
-    host: process.env.Database_host || "http://localhost",
-    user: process.env.Database_user  || "root",
-    password:process.env.Database_password || "awuYBQRAVlCWEVqwepeJxSsQrxRzhrym",
-    database:process.env.Database_name || "general",
-    port:process.env.Database_port || 3306,
+    host: process.env.Database_host ,
+    user: process.env.Database_user ,
+    password:process.env.Database_password ,
+    database:process.env.Database_name,
+    port:process.env.Database_port ,
 
 })
 console.log(process.env.Database_port)
