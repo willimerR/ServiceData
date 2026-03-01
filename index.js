@@ -36,7 +36,7 @@ App.post('/test-db2', (req, res) => {
       if (results && results.length > 0) {
         return res.send({ mensaje: "Inicio de sesión exitoso" });
       } else {
-        return res.status(401).send({ mensaje: "Credenciales incorrectas" });
+        return res.status(401).send({ mensaje: "Credencialess incorrectas" });
       }
     });
   });
